@@ -12,5 +12,6 @@ run npm run build
 
 #below is run phase
 from nginx
+expose 80
 copy --from=builder /app/build /usr/share/nginx/html
 #default command will be run for ngix's container
